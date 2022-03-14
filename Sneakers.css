@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200&display=swap");
+body {
+  background-color: whitesmoke;
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(220, 13%, 13%);
+}
+
+/* ...............NAV................... */
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.dep ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+.dep li:hover {
+  border-bottom: 0.2rem solid orangered;
+  cursor: pointer;
+}
+.dep li {
+  padding: 1rem;
+}
+.check {
+  display: flex;
+  justify-content: space-evenly;
+}
+.trolly {
+  position: relative;
+}
+.num {
+  border: 1px solid black;
+  position: relative;
+  right: 15px;
+  width: 0.8rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 12px;
+  color: white;
+  background-color: hsl(26, 100%, 55%);
+}
+
+.check img {
+  padding: 0.2rem;
+}
+
+.avatar {
+  max-width: 2rem;
+}
+@media screen and (min-width: 800px) {
+  .Ham {
+    display: none;
+  }
+}
+
+/*....................IMAGES................*/
+.mySlides {
+  display: none;
+}
+.gallery {
+  display: grid;
+  padding: 10px;
+  max-width: 50%;
+  float: left;
+}
+.mySlides img {
+  max-width: 20rem;
+  border-radius: 2rem;
+}
+
+.main img {
+  max-width: 20rem;
+  height: 25rem;
+  border-radius: 2rem;
+}
+.preview {
+  padding-top: 2rem;
+  gap: 2rem;
+}
+.preview img {
+  max-width: 5rem;
+  border-radius: 1rem;
+}
+.preview img:hover {
+  border: 0.2rem solid hsl(26, 100%, 55%);
+  opacity: 50%;
+}
+
+/*......................DETAILS................*/
+.details {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  max-width: 50%;
+  float: right;
+}
+.name {
+  color: hsl(26, 100%, 55%);
+}
+.lable h1 {
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+.info p {
+  text-align: justify;
+  font-size: 16px;
+}
+.current {
+  font-size: large;
+  font-weight: bolder;
+}
+.discount {
+  color: hsl(26, 100%, 55%);
+  font-size: 0.8rem;
+}
+.prev {
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+.amount {
+  display: flex;
+}
+.add {
+  display: flex;
+  justify-content: space-evenly;
+  width: 10rem;
+}
+.add button {
+  color: hsl(26, 100%, 55%);
+  max-width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  font-size: 1000;
+  border: none;
+}
+.add p {
+  text-align: center;
+  font-weight: 1000;
+}
+
+.cart button {
+  color: white;
+  width: 15rem;
+  height: 3.5rem;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  background-color: hsl(26, 100%, 55%);
+  align-items: center;
+  border: none;
+}
+.cart img {
+  padding-right: 1rem;
+  color: white;
+}
+.dep-mobile {
+  display: none;
+}
+.arrows {
+  display: none;
+}
+
+/*................CHECKOUT BOX......................*/
+.checkout {
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: whitesmoke;
+  border: 0.5 solid grey;
+  margin: auto;
+}
+.checkout .head {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+}
+
+.checkout .head img {
+  width: 1rem;
+  height: 1rem;
+}
+.deets {
+  display: flex;
+  padding: 1.5rem;
+}
+.checkout .thumb {
+  width: 2rem;
+  height: 2rem;
+}
+.checkout img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.checkout button {
+  width: 15rem;
+  height: 2rem;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  background-color: hsl(26, 100%, 55%);
+}
+.checkout .price {
+  display: block;
+}
+.checkout .price #total {
+  font-weight: bolder;
+}
+/*.................MOBILE VIEW...............*/
+@media screen and (max-width: 800px) {
+  .container {
+    display: grid;
+  }
+  .main img {
+    width: auto;
+    padding: 0;
+    margin: auto;
+  }
+  .dep ul {
+    display: none;
+  }
+  .preview img {
+    display: none;
+  }
+  .details {
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  .amount {
+    display: grid;
+  }
+  .cart button {
+    width: 100%;
+  }
+  .add {
+    width: 100%;
+    margin: auto;
+  }
+  .dep-mobile {
+    display: none;
+    margin: auto;
+    border: 1px solid black;
+    position: absolute;
+    height: 100vh;
+    background-color: whitesmoke;
+  }
+  .dep-mobile li {
+    list-style: none;
+    padding: 1rem;
+  }
+  .dep-mobile li :hover {
+    border-bottom: 1px solid hsl(26, 100%, 55%);
+    cursor: pointer;
+  }
+  .dep-mobile img {
+    float: right;
+    padding: 1rem;
+  }
+  .arrows {
+    display: block;
+    position: absolute;
+    min-width: 50%;
+    top: 30%;
+  }
+  .arrows img {
+    max-width: 1rem;
+    max-height: 1rem;
+  }
+  .previous {
+    background-color: transparent;
+  }
+  .next {
+    float: right;
+    background-color: transparent;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+
+  #mySlides {
+    display: none;
+  }
+  .mySlides img {
+    width: 20rem;
+  }
+}
